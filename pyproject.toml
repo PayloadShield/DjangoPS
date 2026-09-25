@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django_payloadshield"
+version = "1.0.0"
+description = "Pluggable Django decorators for encrypting/decrypting request and response payloads"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+authors = [
+    {name = "Ganesh Kandu", email = "kanduganesh@gmail.com"},
+]
+keywords = ["django", "base64", "crypto", "encryption", "decorator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Django",
+]
+
+dependencies = [
+    "django>=3.2",
+    "compyps>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-django>=4.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/PayloadShield/DjangoPS"
+Repository = "https://github.com/PayloadShield/DjangoPS.git"
+Issues = "https://github.com/PayloadShield/DjangoPS/issues"
+
+[tool.setuptools]
+packages = ["django_payloadshield"]
+
+[tool.setuptools.package-data]
+django_payloadshield = ["py.typed"]

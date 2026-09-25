@@ -1,0 +1,15 @@
+# Core dependencies
+django>=3.2
+compyps>=1.0.0
+
+# For running examples
+requests>=2.26.0
+
+# Development dependencies
+pytest>=6.0
+pytest-django>=4.5.0
+
+# Optional tools
+black>=21.0  # Code formatting
+flake8>=3.9  # Linting
+mypy>=0.910  # Type checking
